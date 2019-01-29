@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* primary */
+/* secondary */
+/* neutral */
+body {
+  color: #151f29;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  width: 96%;
+  margin: auto;
+  text-align: center;
+  margin-top: 84px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+.logo span {
+  color: #4f7df3;
+}
+
+.subscribe h1 {
+  color: #969696;
+  font-size: 24px;
+}
+.subscribe span {
+  color: #151f29;
+  font-weight: 600;
+}
+.subscribe p {
+  font-size: 16px;
+  margin: 24px auto 40px;
+}
+.subscribe input, .subscribe button {
+  display: block;
+  width: 80%;
+  height: 46px;
+  margin: auto;
+  border-radius: 40px;
+  outline: none;
+}
+.subscribe input {
+  border: 1px solid #c2d3ff;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.subscribe input::placeholder {
+  color: #969696;
+}
+.subscribe input.invalid {
+  border: 1px solid #ff5263;
+}
+.subscribe .invalid-feedback {
+  display: block;
+  color: #ff5263;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+}
+.subscribe button {
+  color: white;
+  border: none;
+  background: #4f7df3;
+  font-weight: 600;
+  box-shadow: 0 4px 8px #c2d3ff;
+  margin-top: 12px;
+  transition: 0.3s;
+}
+.subscribe button:hover {
+  color: #4f7df3;
+  background: white;
+  border: 1px solid #4f7df3;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.ilustration {
+  margin-top: 64px;
+}
+.ilustration img {
+  width: 86%;
+}
+
+.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid rgba(79, 125, 243, 0.2);
+  box-sizing: border-box;
+  border-radius: 100%;
+  margin-right: 10px;
+  color: #4f7df3;
+  font-size: 16px;
+}
+.social:hover {
+  border: 1px solid #4f7df3;
+}
+
+p.copy {
+  color: #969696;
+  margin-top: 30px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 64px;
+  padding: 0 40px;
+}
+footer .attribution {
+  font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+/* desktop */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+  }
+
+  .logo {
+    font-size: 38px;
+  }
+
+  .subscribe h1 {
+    font-size: 36px;
+  }
+  .subscribe p {
+    font-size: 20px;
+  }
+  .subscribe input, .subscribe button {
+    display: inline-block;
+    height: 46px;
+    margin: auto;
+    border-radius: 40px;
+    outline: none;
+  }
+  .subscribe form {
+    position: relative;
+    text-align: left;
+  }
+  .subscribe input, .subscribe button {
+    height: 54px;
+  }
+  .subscribe input {
+    width: 67%;
+  }
+  .subscribe button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+  }
+  .subscribe .invalid-feedback {
+    text-align: left;
+    padding-left: 2vw;
+  }
+
+  .ilustration img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

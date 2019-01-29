@@ -1,0 +1,173 @@
+@import 'reset';
+@import 'variables';
+
+body {
+  color: $veryDarkBlue;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+  width: 96%;
+  margin: auto;
+  text-align: center;
+  margin-top: 84px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  span {
+    color: $blue;
+  }
+}
+
+.subscribe {
+  h1 {
+    color: $gray;
+    font-size: 24px;
+  }
+  span {
+    color: $veryDarkBlue;
+    font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+    margin: 24px auto 40px;
+  }
+  input, button {
+    display: block;
+    width: 80%;
+    height: 46px;
+    margin: auto;
+    border-radius: 40px;
+    outline: none;
+  }
+  input {
+    border: 1px solid $paleBlue;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    &::placeholder {
+      color: $gray;
+    }
+  }
+  input.invalid {
+    border: 1px solid $lightRed;
+  }
+  .invalid-feedback {
+    display: block;
+    color: $lightRed;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  button {
+    color: white;
+    border: none;
+    background: $blue;
+    font-weight: 600;
+    box-shadow: 0 4px 8px $paleBlue;
+    margin-top: 12px;
+    transition: .3s;
+    &:hover {
+      color: $blue;
+      background: white;
+      border: 1px solid $blue;
+      box-shadow: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.ilustration {
+  margin-top: 64px;
+  img { width: 86%; }
+}
+
+.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid hsla(223, 87%, 63%, 20%);
+  box-sizing: border-box;
+  border-radius: 100%;
+  margin-right: 10px;
+  color: $blue;
+  font-size: 16px;
+  &:hover {
+    border: 1px solid hsla(223, 87%, 63%, 100%);
+  }
+}
+
+p.copy {
+  color: $gray;
+  margin-top: 30px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 64px;
+  padding: 0 40px;
+  .attribution {
+    font-size: 12px;
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+/* desktop */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+  }
+  .logo {
+    font-size: 38px;
+  }
+  .subscribe {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 20px;
+    }
+    input, button {
+      display: inline-block;
+      height: 46px;
+      margin: auto;
+      border-radius: 40px;
+      outline: none;
+    }
+    form {
+      position: relative;
+      text-align: left;
+    }
+    input,button {
+      height: 54px;
+    }
+    input {
+      width: 67%;
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30%;
+    }
+    .invalid-feedback {
+      text-align: left;
+      padding-left: 2vw;
+    }
+  }
+  .ilustration {
+    img { width: 100%; }
+  }
+}
